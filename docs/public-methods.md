@@ -1,6 +1,6 @@
 # Inpux `public methods`
 
-`setOptions(options):` Changes the option values. Calling this function will also automatically format the inpux with the new value
+#### `setOptions(options)` Changes the option values. Calling this function will also automatically format the inpux with the new value
 ```js
 // Example of setOptions() usage
 
@@ -18,7 +18,7 @@ myInput.setOptions({ // New options value
 ```
 <br/>
 
-`setInput(input):` Changes target inpux element, calling this function will also unformat and remove all event listeners from the old inpux and automatically format the new one
+#### `setInput(input)` Changes target inpux element, calling this function will also unformat and remove all event listeners from the old inpux and automatically format the new one
 ```js
 // Example of setInput() usage
 
@@ -37,7 +37,7 @@ myInput.setInput(secondInput);
 ```
 <br/>
 
-`val(formatted):` Get the inpux value. If you pass the parameter as true you will receive the formatted value, otherwise, you will receive the unformatted value
+#### `val(formatted)` Get the inpux value. If you pass the parameter as true you will receive the formatted value, otherwise, you will receive the unformatted value
 ```js
 // Example of val() usage
 // Assume that the value is "1,234,567.90"
@@ -52,7 +52,7 @@ console.log(myInput.val(true)) // 1,234,567.90
 ```
 <br/>
 
-`groups():` Get an array of inpux values separated by delimiters
+#### `groups()` Get an array of inpux values separated by delimiters
 ```js
 // Example of groups() usage
 // Assume that the value is "abc.def.ghi"
@@ -65,7 +65,7 @@ console.log(myInput.groups()) // ["abc", "def", "ghi"]
 ```
 <br/>
 
-`destroy():` Unformat and remove all event listeners from your inpux
+#### `destroy()` Unformat and remove all event listeners from your inpux
 ```js
 // Example of destroy() usage
 let myInput = new Inpux('input');
