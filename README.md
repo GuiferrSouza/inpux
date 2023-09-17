@@ -11,7 +11,7 @@ Simple custom `<input type="text"/>` formatter for `<html></html>`
 ```bash
 npm install inpux
 ```
->Inpux is available in [jsDelivr](https://www.jsdelivr.com/package/npm/inpux) and [GitHub](https://github.com/GuiferrSouza/inpux)
+Inpux is available in [jsDelivr](https://www.jsdelivr.com/package/npm/inpux) and [GitHub](https://github.com/GuiferrSouza/inpux)
 
 ### Usage
 Using [script tag](https://www.w3schools.com/tags/tag_script.asp), include one of these in your `HTML`
