@@ -38,6 +38,6 @@ const myInpux = new Inpux('.input-to-format', {...});
 Check out the [demo](https://guiferrsouza.github.io/inpux/) page
 
 ## Documentation
-- [Constructor]()
-- [Public methods]()
+- [Constructor](https://github.com/GuiferrSouza/inpux/blob/main/docs/constructor.md)
+- [Public methods](https://github.com/GuiferrSouza/inpux/blob/main/docs/public-methods.md)
 - [Options]()
