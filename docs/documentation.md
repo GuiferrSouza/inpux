@@ -1,4 +1,4 @@
-# Inpux documentation
+# Inpux `documentation`
 - [Constructor]()
 - [Public Methods]()
 - [Options]()
