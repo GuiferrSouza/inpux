@@ -37,7 +37,7 @@ myInput.setInput(secondInput);
 ```
 <br/>
 
-#### `val(formatted)` Get the inpux value. If you pass the parameter as true you will receive the formatted value, otherwise, you will receive the unformatted value
+#### `val(formatted)` Get the inpux value. If you pass the parameter as true you will receive the formatted value, otherwise, you will receive the raw value
 ```js
 // Example of val() usage
 // Assume that the value is "1,234,567.90"
