@@ -7,8 +7,8 @@
  - General
    - [type](#type)
    - [delimiters](#delimiters)
-   - [onlyBlurred and onlyFocused](#onlyBlurred&nbsp;and&nbsp;onlyFocused)
-   - [max and min](#max)
+   - [onlyBlurred/onlyFocused](#onlyBlurred/onlyFocused)
+   - [max/min](#max)
 
   <br/>
      
@@ -69,7 +69,7 @@ let date = new Inpux('#date-input', {
 ```
 <br/><br/>
 
-## `onlyBlurred`&nbsp;and&nbsp;`onlyFocused`
+## `onlyBlurred/onlyFocused`
 onlyBlurred is a `boolean` that, when set to `true`, triggers the format on the `blur` event, while onlyFocused, another `boolean`, does the same for the `focus` event when set to `true`.
 ```js
 // Focused input value: "HelloWorld!"
@@ -90,7 +90,7 @@ let customInput = new Inpux('#custom-input', {
 ```
 <br/><br/>
 
-## `max` and `min`
+## `max/min`
 `numbers` or arrays of `numbers` that defines the max and min value of a number.
 > [!NOTE]
 > - For `custom` type, you have to set [onlyNumbers](#onlyNumbers) option as `true`.
