@@ -7,8 +7,8 @@
  - General
    - [type](#type)
    - [delimiters](#delimiters)
-   - [onlyBlurred and onlyFocused](<onlyBlurred and onlyFocused>)
-   - [max and min](<max and min>)
+   - [onlyBlurred and onlyFocused](#onlyBlurred)
+   - [max and min](#max)
 
   <br/>
      
