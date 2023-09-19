@@ -91,6 +91,7 @@ let customInput = new Inpux('#custom-input', {
 ```
 <br/><br/>
 
+<a id="max"></a>
 ## `max and min`
 `numbers` or arrays of `numbers` that defines the max and min value of a number.
 > [!NOTE]
