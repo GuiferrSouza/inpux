@@ -69,7 +69,7 @@ let date = new Inpux('#date-input', {
 ```
 <br/><br/>
 
-<a name="onlyBlurred"></a>
+<a id="onlyBlurred"></a>
 ## `onlyBlurred and onlyFocused`
 onlyBlurred is a `boolean` that, when set to `true`, triggers the format on the `blur` event, while onlyFocused, another `boolean`, does the same for the `focus` event when set to `true`.
 ```js
