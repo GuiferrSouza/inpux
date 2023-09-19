@@ -258,7 +258,7 @@ let customInput = new Inpux('#custom-input', {
 <br/><br/>
 
 ## `leadingZero`
-A `boolean` that, when set to `true`, fills the blocks with `"0"` on the left. You must also include [blocks](#blocks).\
+A `boolean` that, when set to `true`, fills the blocks with `"0"` on the left. You must also include [blocks](#blocks).
 ```js
 // 1    =>  blur event  =>  01
 // 123  =>  blur event  =>  12.003
@@ -271,7 +271,7 @@ let customInput = new Inpux('#custom-input', {
 <br/><br/>
 
 ## `onlyNumbers`
-A `boolean` that, when set to `true`, filter only numeric characters in the inpux value.\
+A `boolean` that, when set to `true`, filter only numeric characters in the inpux value.
 ```js
 // ABC123$$456  =>  123456
 let customInput = new Inpux('#custom-input', {
