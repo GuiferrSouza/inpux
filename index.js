@@ -91,7 +91,7 @@ document.addEventListener('change', async e => {
             &emsp;&ensp; numeralStyle: "${val}",<br>
             &emsp;&ensp; emptyToZero: false<br>
         });`; colorCodeStyle(codeArea);
-        numeralInput.setOptions({
+        _numeral.setOptions({
             type: "numeral",
             numeralStyle: val,
             emptyToZero: false,
