@@ -1,11 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Hello, everyone who wants to check HTML data! -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inpux</title>
 </head>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+<link rel="stylesheet" href="index.css">
+
 <body>
-    <script src="inpux.min.js"></script>
+    <header>
+        <div class="title">Inpu<span class="yellow">x</span></div>
+        <span>Your <span class="yellow">input</span> formatter</span>
+        <div id="button-box">
+            <button id="docs-btn">
+                <span>Docs</span>
+            </button>
+            <button id="demo-btn" class="iconned scroll-to-demo">
+                <span>Demos</span>
+                <i class="fa-solid fa-arrow-down icon"></i>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div id="demo-content">
+            <!-- Numeral formatting -->
+            <div class="wrapper">
+                <div class="title">
+                    <span>Numeral formatting</span>
+                    <select id="numeral-style-select">
+                        <option value="thousand" selected>Thousand</option>
+                        <option value="wan">Wan (China)</option>
+                        <option value="lakh">Lakh (India)</option>
+                    </select>
+                </div>
+                <input id="numeral-input" type="text" spellcheck="false" placeholder="Type here">
+                <div class="code-style">
+                    <button class="copy-code-btn material-symbols-outlined">content_copy</button>
+                    <div class="code-area">
+                        var myinput = new Inpux("#input", {<br>
+                        &emsp;&ensp; type: "numeral",<br>
+                        &emsp;&ensp; numeralStyle: "thousand",<br>
+                        &emsp;&ensp; emptyToZero: false<br>
+                        });
+                    </div>
+                </div>
+            </div>
+
+            <!-- Date formatting -->
+            <div class="wrapper">
+                <div class="title">
+                    <span>Date formatting</span>
+                </div>
+                <input id="date-input" type="text" spellcheck="false" placeholder="Type here">
+                <div class="code-style">
+                    <button class="copy-code-btn material-symbols-outlined">content_copy</button>
+                    <div class="code-area">
+                        var myinput = new Inpux("#input", {<br>
+                        &emsp;&ensp; type: "date",<br>
+                        &emsp;&ensp; pattern: ["Y", "m", "d"],<br>
+                        &emsp;&ensp; delimiters: "-"<br>
+                        });
+                    </div>
+                </div>
+            </div>
+
+            <!-- Time formatting -->
+            <div class="wrapper">
+                <div class="title">
+                    <span>Time formatting</span>
+                </div>
+                <input id="time-input" type="text" spellcheck="false" placeholder="Type here">
+                <div class="code-style">
+                    <button class="copy-code-btn material-symbols-outlined">content_copy</button>
+                    <div class="code-area">
+                        var myinput = new Inpux("#input", {<br>
+                        &emsp;&ensp; type: "time",<br>
+                        &emsp;&ensp; pattern: ["h", "m"],<br>
+                        });
+                    </div>
+                </div>
+            </div>
+
+            <!-- Credit card formatting -->
+            <div class="wrapper">
+                <div class="title">
+                    <span>Credit card formatting</span>
+                    <span style="opacity: .5;">custom</span>
+                </div>
+                <input id="card-input" type="text" spellcheck="false" placeholder="Type here">
+                <div class="code-style">
+                    <button class="copy-code-btn material-symbols-outlined">content_copy</button>
+                    <div class="code-area">
+                        var myinput = new Inpux("#input", {<br>
+                        &emsp;&ensp; type: "custom",<br>
+                        &emsp;&ensp; delimiters: " ",<br>
+                        &emsp;&ensp; onlyNumbers: true,<br>
+                        &emsp;&ensp; blocks: [4, 4, 4, 4],<br>
+                        &emsp;&ensp; contained: true,<br>
+                        });
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phone number formatting -->
+            <div class="wrapper">
+                <div class="title">
+                    <span>Phone number formatting</span>
+                    <span style="opacity: .5;">custom</span>
+                </div>
+                <input id="phone-input" type="text" spellcheck="false" placeholder="Type here">
+                <div class="code-style">
+                    <button class="copy-code-btn material-symbols-outlined">content_copy</button>
+                    <div class="code-area">
+                        var myinput = new Inpux("#input", {<br>
+                        &emsp;&ensp; type: "custom",<br>
+                        &emsp;&ensp; delimiters: ["(", ") ", "-"],<br>
+                        &emsp;&ensp; blocks: [0, 3, 3, 4],<br>
+                        &emsp;&ensp; onlyNumbers: true,<br>
+                        &emsp;&ensp; contained: true<br>
+                        });
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom formatting -->
+            <div class="wrapper">
+                <div class="title">
+                    <span>Custom formatting</span>
+                    <span style="opacity: .5;">custom</span>
+                </div>
+                <input id="custom-input" type="text" spellcheck="false" placeholder="Type here">
+                <div class="code-style">
+                    <button class="copy-code-btn material-symbols-outlined">content_copy</button>
+                    <div class="code-area">
+                        var myinput = new Inpux("#input", {<br>
+                        &emsp;&ensp; type: "custom",<br>
+                        &emsp;&ensp; delimiters: "/-",<br>
+                        &emsp;&ensp; blocks: 3,<br>
+                        });
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper center">
+                <button class="iconned scroll-to-demo">
+                    <span>Back to top</span>
+                    <i class="fa-solid fa-arrow-up icon"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="no-select">
+            <span class="link" id="githubProjectLink">GitHub project</span>
+            <span>|</span>
+            <span class="link" id="documentationLink">Documentation</span>
+        </div>
+        <div class="social">
+            <span>Created by Guilherme Ferreira de Souza</span>
+            <i class="fa-brands fa-github link" id="githubLink"></i>
+            <i class="fa-brands fa-codepen link" id="codepenLink"></i>
+            <i class="fa-brands fa-linkedin link" id="linkedinLink"></i>
+        </div>
+    </footer>
 </body>
+
+<script src="https://kit.fontawesome.com/f4c98440f5.js" crossorigin="anonymous"></script>
+<script src="inpux.js"></script>
+<script src="index.min.js"></script>
+
 </html>
