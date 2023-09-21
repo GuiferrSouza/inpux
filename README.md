@@ -35,4 +35,4 @@ Set your `Inpux` element with your DOM element and your options as parameters in
 ```js
 const myInpux = new Inpux('.input-to-format', {...});
 ```
-Check out the [documentation](https://github.com/GuiferrSouza/inpux/blob/main/docs/documentation.md) or [demo](https://guiferrsouza.github.io/inpux/) page
+[Project](https://github.com/GuiferrSouza/inpux) • [Documentation](https://github.com/GuiferrSouza/inpux/blob/main/docs/documentation.md) • [Demo](guiferrsouza.github.io/inpux/)
