@@ -21,4 +21,4 @@ const myInpux = new Inpux(myInput, {
   max: 100000
 });
 ```
-Check [documentation](https://github.com/GuiferrSouza/inpux/blob/main/docs/documentation.md) or [demo](guiferrsouza.github.io/inpux/)  page
+[Project](https://github.com/GuiferrSouza/inpux) • [Documentation](https://github.com/GuiferrSouza/inpux/blob/main/docs/documentation.md) • [Demo](guiferrsouza.github.io/inpux/)
