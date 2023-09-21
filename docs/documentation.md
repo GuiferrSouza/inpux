@@ -5,4 +5,4 @@
 
 \
 \
-[Project](https://github.com/GuiferrSouza/inpux) • [Demo](guiferrsouza.github.io/inpux/)
+[Project](https://github.com/GuiferrSouza/inpux) • [Demo](https://guiferrsouza.github.io/inpux/)
