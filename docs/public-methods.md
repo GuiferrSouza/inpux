@@ -71,4 +71,4 @@ console.log(myInput.groups()) // ["abc", "def", "ghi"]
 let myInput = new Inpux('input');
 myInput.destroy();
 ```
-Check [documentation](https://github.com/GuiferrSouza/inpux/blob/main/docs/documentation.md) or [demo](guiferrsouza.github.io/inpux/) page
+[Project](https://github.com/GuiferrSouza/inpux) • [Documentation](https://github.com/GuiferrSouza/inpux/blob/main/docs/documentation.md) • [Demo](guiferrsouza.github.io/inpux/)
