@@ -22,7 +22,7 @@ Using [script tag](https://www.w3schools.com/tags/tag_script.asp), include one o
 
 Using [modules](https://dev.to/costamatheus97/es-modules-and-commonjs-an-overview-1i4b), include one of these in your `Javascript`
 ```js
-import Inpux from './node_modules/inpux/inpux.min.js';
+import Inpux from './node_modules/inpux/modules/inpux.js';
 const Inpux = require("inpux");
 ```
 
