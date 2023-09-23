@@ -16,7 +16,7 @@ Inpux is available in [jsDelivr](https://www.jsdelivr.com/package/npm/inpux) and
 ### Usage
 Using [script tag](https://www.w3schools.com/tags/tag_script.asp), include one of these in your `HTML`
 ```html
-<script src="https://cdn.jsdelivr.net/npm/inpux@1.1.7/inpux.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/inpux/inpux.min.js"></script>
 <script src="https://guiferrsouza.github.io/inpux/inpux.min.js"></script>
 ```
 
