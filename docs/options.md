@@ -201,7 +201,10 @@ let numeralInput = new Inpux('#numeral-input', {
 <br/><br/>
 
 ## `pattern`
-An `array` of `strings`, used to describe how values should be formatted and displayed.\
+An `array` of `strings`, used to describe how values should be formatted and displayed. 
+When using a pattern in a custom input, it automates the creation of [blocks](#blocks) and [delimiter](#delimiters), you can 
+specify where values should be placed by using `"x"` and any other character to serve as the delimiter.
+
 The default value for the date type is `["M", "D", "Y"]`, and for the time type, it is `["H", "M", "S"]`.
 ```js
 // 02/2023
@@ -220,6 +223,11 @@ let dateInput = new Inpux('#date-input', {
 let timeInput = new Inpux('#time-input', {
   type: "time",
   pattern: ["h", "m"] // or "hm"
+});
+
+// abc/def-gh
+let customInput = new Inpux('#custom-input', {
+  pattern: "xxx/xxx-xx"
 });
 ```
 <br/><br/>
