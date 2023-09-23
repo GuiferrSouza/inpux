@@ -27,6 +27,7 @@
      
  - Custom
    - [blocks](#blocks)
+   - [pattern](#pattern)
    - [contained](#contained)
    - [leadingZero](#leadingZero)
    - [onlyNumbers](#onlyNumbers)
