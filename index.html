@@ -79,7 +79,7 @@
                     <div class="code-area">
                         var myinput = new Inpux("#input", {<br>
                         &emsp;&ensp; type: "time",<br>
-                        &emsp;&ensp; pattern: ["h", "m"],<br>
+                        &emsp;&ensp; pattern: ["h", "m"]<br>
                         });
                     </div>
                 </div>
@@ -90,6 +90,10 @@
                 <div class="title">
                     <span>Credit card formatting</span>
                     <span style="opacity: .5;">custom</span>
+                    <select id="card-select">
+                        <option value="b" selected>using blocks</option>
+                        <option value="p">using pattern</option>
+                    </select>
                 </div>
                 <input id="card-input" type="text" spellcheck="false" placeholder="Type here">
                 <div class="code-style">
@@ -97,10 +101,10 @@
                     <div class="code-area">
                         var myinput = new Inpux("#input", {<br>
                         &emsp;&ensp; type: "custom",<br>
+                        &emsp;&ensp; blocks: [4, 4, 4, 4],<br>
                         &emsp;&ensp; delimiters: " ",<br>
                         &emsp;&ensp; onlyNumbers: true,<br>
-                        &emsp;&ensp; blocks: [4, 4, 4, 4],<br>
-                        &emsp;&ensp; contained: true,<br>
+                        &emsp;&ensp; contained: true<br>
                         });
                     </div>
                 </div>
@@ -111,6 +115,10 @@
                 <div class="title">
                     <span>Phone number formatting</span>
                     <span style="opacity: .5;">custom</span>
+                    <select id="phone-select">
+                        <option value="b" selected>using blocks</option>
+                        <option value="p">using pattern</option>
+                    </select>
                 </div>
                 <input id="phone-input" type="text" spellcheck="false" placeholder="Type here">
                 <div class="code-style">
@@ -118,8 +126,8 @@
                     <div class="code-area">
                         var myinput = new Inpux("#input", {<br>
                         &emsp;&ensp; type: "custom",<br>
-                        &emsp;&ensp; delimiters: ["(", ") ", "-"],<br>
-                        &emsp;&ensp; blocks: [0, 3, 3, 4],<br>
+                        &emsp;&ensp; delimiters: ["(", ")", " ", "-"],<br>
+                        &emsp;&ensp; blocks: [0, 3, 0, 3, 4],<br>
                         &emsp;&ensp; onlyNumbers: true,<br>
                         &emsp;&ensp; contained: true<br>
                         });
@@ -132,6 +140,10 @@
                 <div class="title">
                     <span>Custom formatting</span>
                     <span style="opacity: .5;">custom</span>
+                    <select id="custom-select">
+                        <option value="b" selected>using blocks</option>
+                        <option value="p">using pattern</option>
+                    </select>
                 </div>
                 <input id="custom-input" type="text" spellcheck="false" placeholder="Type here">
                 <div class="code-style">
@@ -140,7 +152,7 @@
                         var myinput = new Inpux("#input", {<br>
                         &emsp;&ensp; type: "custom",<br>
                         &emsp;&ensp; delimiters: "/-",<br>
-                        &emsp;&ensp; blocks: 3,<br>
+                        &emsp;&ensp; blocks: 3<br>
                         });
                     </div>
                 </div>
