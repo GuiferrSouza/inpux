@@ -25,9 +25,9 @@ window.addEventListener('DOMContentLoaded', () => {
     });
     _phone = new Inpux("#phone-input", {
         type: "custom",
-        delimiters: ["(", ") ", "-"],
+        delimiters: ["(", ")", " ", "-"],
         onlyNumbers: true,
-        blocks: [0, 3, 3, 4],
+        blocks: [0, 3, 0, 3, 4],
         contained: true
     });
     _custom = new Inpux("#custom-input", {
@@ -67,7 +67,7 @@ document.addEventListener('click', async e => {
         });
     }
 
-    if(link){
+    if (link) {
         let socialList = {
             githubProjectLink: "https://github.com/GuiferrSouza/inpux",
             documentationLink: "https://github.com/GuiferrSouza/inpux/blob/main/docs/documentation.md",
@@ -81,6 +81,11 @@ document.addEventListener('click', async e => {
 
 document.addEventListener('change', async e => {
     let numeralStyleSelect = e.target.closest("#numeral-style-select");
+
+    let cardSelect = e.target.closest("#card-select");
+    let phoneSelect = e.target.closest("#phone-select");
+    let customSelect = e.target.closest("#custom-select");
+
     if (numeralStyleSelect) {
         let val = numeralStyleSelect.value;
         let wrapper = numeralStyleSelect.closest(".wrapper");
@@ -96,6 +101,75 @@ document.addEventListener('change', async e => {
             numeralStyle: val,
             emptyToZero: false,
         });
+    }
+
+    if(customSelect){
+        let val = customSelect.value;
+        let wrapper = customSelect.closest(".wrapper");
+        let codeArea = wrapper.querySelector(".code-area");
+
+        if(val == "p"){
+            codeArea.innerHTML = `
+            var myinput = new Inpux("#input", {<br>
+                &emsp;&ensp; type: "custom",<br>
+                &emsp;&ensp; pattern: "xxx/xxx-xxx"<br>
+            });<br>&ensp;`;
+        }else{
+            codeArea.innerHTML = `
+            var myinput = new Inpux("#input", {<br>
+                &emsp;&ensp; type: "custom",<br>
+                &emsp;&ensp; delimiters: "/-",<br>
+                &emsp;&ensp; blocks: 3<br>
+            });`;
+        } colorCodeStyle(codeArea);
+    }
+    if(phoneSelect){
+        let val = phoneSelect.value;
+        let wrapper = phoneSelect.closest(".wrapper");
+        let codeArea = wrapper.querySelector(".code-area");
+
+        if(val == "p"){
+            codeArea.innerHTML = `
+            var myinput = new Inpux("#input", {<br>
+                &emsp;&ensp; type: "custom",<br>
+                &emsp;&ensp; pattern: "(xxx) xxx-xxxx",<br>
+                &emsp;&ensp; onlyNumbers: true,<br>
+                &emsp;&ensp; contained: true<br>
+            });<br>&ensp;`;
+        }else{
+            codeArea.innerHTML = `
+            var myinput = new Inpux("#input", {<br>
+                &emsp;&ensp; type: "custom",<br>
+                &emsp;&ensp; delimiters: ["(", ")", " ", "-"],<br>
+                &emsp;&ensp; blocks: [0, 3, 0, 3, 4],<br>
+                &emsp;&ensp; onlyNumbers: true,<br>
+                &emsp;&ensp; contained: true<br>
+            });`
+        } colorCodeStyle(codeArea);
+    }
+    if(cardSelect){
+        let val = cardSelect.value;
+        let wrapper = cardSelect.closest(".wrapper");
+        let codeArea = wrapper.querySelector(".code-area");
+
+        if(val == "p"){
+            codeArea.innerHTML = `
+            var myinput = new Inpux("#input", {<br>
+                &emsp;&ensp; type: "custom",<br>
+                &emsp;&ensp; pattern: "xxxx xxxx xxxx xxxx",<br>
+                &emsp;&ensp; onlyNumbers: true,<br>
+                &emsp;&ensp; contained: true<br>
+            });<br>&ensp;`;
+        }else{
+            codeArea.innerHTML = `
+            var myinput = new Inpux("#input", {<br>
+                &emsp;&ensp; type: "custom",<br>
+                &emsp;&ensp; blocks: [4, 4, 4, 4],<br>
+                &emsp;&ensp; delimiters: " ",<br>
+                &emsp;&ensp; onlyNumbers: true,<br>
+                &emsp;&ensp; contained: true<br>
+            });`;
+        } colorCodeStyle(codeArea);
     }
 });
 
